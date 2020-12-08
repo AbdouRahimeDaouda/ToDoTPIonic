@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            ToDo App
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button routerLink="/profile">
+              <ion-icon slot="icon-only" name="person"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="bg-img">
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="todo">
+                <ion-icon name="calendar"></ion-icon>
+                <ion-label>ToDO</ion-label>
+                <ion-badge >{{data}}</ion-badge>
+            </ion-tab-button>
+
+            <ion-tab-button tab="done">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <ion-label>Done</ion-label>
+            </ion-tab-button>
+
+
+        </ion-tab-bar>
+
+    </ion-tabs>
+</div>
+</ion-content>
+
